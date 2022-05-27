@@ -74,7 +74,7 @@ double beta1_2(double *x, double *y, int n)
     double x_ave = ave2(x, n);
     double y_ave = ave2(y, n);
 
-    return (sum2(x, y, n) - n * x_ave * y_ave) / (sum2(x, y, n) - n * x_ave * x_ave);
+    return (sum2(x, y, n) - n * x_ave * y_ave) / (sum2(x, x, n) - n * x_ave * x_ave);
 }
 
 double beta0(double *x, double *y, int n)
